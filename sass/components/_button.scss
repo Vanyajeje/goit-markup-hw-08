@@ -1,0 +1,81 @@
+.hero__button {
+  @extend %button;
+  display: inline-block;
+}
+
+.footer-form__button {
+  @extend %button;
+
+  padding: 10px 28px;
+  border: 0px;
+  display: flex;
+  margin-left: 12px;
+  align-items: center;
+}
+
+.button__append {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
+.filter__button {
+  @extend %button;
+  color: $title-text-color;
+  background-color: $bg-grey-color;
+  font-weight: 500;
+  padding: 6px 22px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  border: transparent;
+
+  // background-color
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-text-color;
+    background-color: $accent-text-color;
+    box-shadow: $box-shadow;
+  }
+}
+
+.close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+
+  height: 30px;
+  width: 30px;
+
+  background-color: $bg-white-color;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  border-radius: 50%;
+}
+
+.close-button__cross {
+  fill: #000000;
+}
+
+.modal__button {
+  @extend %button;
+
+  margin: 0 auto;
+  padding: 10px 52px;
+  @include anim(box-shadow);
+
+  &:focus,
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}

@@ -1,0 +1,87 @@
+.team {
+  @extend %list;
+  display: flex;
+}
+
+.team__item {
+  width: 270px;
+
+  border: 0px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: $bg-white-color;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.section--team {
+  padding: 94px 0 94px;
+  background-color: $bg-grey-color;
+}
+.team__name {
+  margin: 0 0 10px;
+  padding-top: 30px;
+
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team__post {
+  font-size: 16px;
+  line-height: 1.19;
+
+  margin: 0;
+  margin-bottom: 16px;
+
+  text-align: center;
+}
+
+.social-networks {
+  @extend %list;
+
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-networks__img {
+  fill: #afb1b8;
+
+  width: 20px;
+  height: 20px;
+
+  @include anim(fill);
+}
+
+.social-networks__link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  border: 0;
+  margin: 0;
+  width: 44px;
+  height: 44px;
+
+  @include anim(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+
+  &:hover .social-networks__img,
+  &:focus .social-networks__img {
+    fill: $bg-white-color;
+  }
+}

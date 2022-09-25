@@ -1,0 +1,31 @@
+.area {
+  @extend %list;
+
+  display: flex;
+}
+
+.area__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.area__img-thumb {
+  position: relative;
+}
+.area__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+
+  height: 70px;
+  width: 100%;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: $bg-white-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
