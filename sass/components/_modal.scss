@@ -19,8 +19,15 @@
 .modal {
   position: absolute;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  @media screen and (max-width: 320px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   top: 50%;
   left: 50%;
@@ -123,8 +130,8 @@
 .custom-checkbox {
   display: flex;
   justify-content: center;
-  text-align: center;
-
+  // text-align: center;
+  padding-left: 40px;
   align-items: center;
 
   margin-bottom: 30px;

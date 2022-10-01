@@ -1,3 +1,10 @@
+.section__area {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .area {
   @extend %list;
 

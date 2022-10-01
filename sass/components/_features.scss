@@ -2,8 +2,17 @@
   @extend %list;
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 
   &__title {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -13,20 +22,50 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 0;
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 248px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item + &__item {
+      margin-top: 30px;
+    }
   }
 }
 
-.features__text {
-  font-size: 14px;
-  line-height: 1.71;
-  margin: 0;
+.section--features-pudding {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .features__icon-thumb {
-  width: 270px;
   height: 120px;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -35,10 +74,65 @@
   margin-bottom: 30px;
 }
 
-.section--features-pudding {
-  padding-bottom: 0;
-}
+// .features {
+//   @extend %list;
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
-}
+//   display: flex;
+
+//   &__title {
+//     margin-top: 0;
+//     margin-bottom: 10px;
+
+//     color: $title-text-color;
+
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//   }
+// }
+
+// .features {
+//   @extend %list;
+
+//   display: flex;
+
+//   &__title {
+//     margin-top: 0;
+//     margin-bottom: 10px;
+
+//     color: $title-text-color;
+
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//   }
+// }
+
+// .features__text {
+//   font-size: 14px;
+//   line-height: 1.71;
+//   margin: 0;
+// }
+
+// .features__icon-thumb {
+//   width: 270px;
+//   height: 120px;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   background-color: $bg-grey-color;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
+
+// .section--features-pudding {
+//   padding-bottom: 0;
+// }
+
+// .features__item:not(:last-child) {
+//   margin-right: 30px;
+// }
