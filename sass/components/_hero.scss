@@ -12,7 +12,7 @@
     url('../images/desktop/background/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 480px;
+  background-size: cover;
   &__text {
     width: 360px;
     color: $white-text-color;
@@ -32,7 +32,7 @@
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/phone/background/background2x.jpg');
+      url('../images/phone/background/background_2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -45,7 +45,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/tablet/background/background2x.jpg');
+      url('../images/tablet/background/background_2x.jpg');
   }
 
   @media screen and (min-width: 1200px) {
@@ -69,7 +69,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/desktop/background/background2x.jpg');
+      url('../images/desktop/background/background_2x.jpg');
   }
   // .hero {
   //   background-color: $bg-darc-color;
