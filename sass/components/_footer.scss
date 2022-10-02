@@ -51,7 +51,7 @@
   padding: 0;
 }
 
-.social-networks__img--footer {
+.social-networks__img.social-networks__img--footer {
   fill: $bg-white-color;
 }
 .social-networks__link--footer {
@@ -78,7 +78,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: start;
     column-gap: 60px;
   }

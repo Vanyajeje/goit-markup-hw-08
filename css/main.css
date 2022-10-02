@@ -302,7 +302,7 @@ img {
   .nav__list {
     list-style: none;
     margin-left: 87px;
-    margin-right: 96px;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -399,17 +399,13 @@ img {
     width: 100%;
     height: 100%;
     background: #ffffff;
-    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
   .burger-menu.is-open {
-    -webkit-transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -438,6 +434,9 @@ img {
   }
   .burger-menu__close-button:hover .burger-menu__close-button__cross, .burger-menu__close-button:focus .burger-menu__close-button__cross {
     fill: #2196f3;
+  }
+  .menu-nav__link.menu-nav__link--current {
+    color: #2196f3;
   }
   .menu-position {
     display: -webkit-box;
@@ -473,7 +472,7 @@ img {
     text-align: center;
   }
   .menu-nowrap {
-    margin-top: 302px;
+    margin-top: 15em;
   }
   .menu-contact {
     list-style: none;
@@ -703,8 +702,8 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/desktop/background/background_2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/background/background_2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/desktop/background/background2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/background/background2x.jpg");
   }
 }
 
@@ -1244,7 +1243,7 @@ img {
   padding: 0;
 }
 
-.social-networks__img--footer {
+.social-networks__img.social-networks__img--footer {
   fill: #ffffff;
 }
 
@@ -1292,9 +1291,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: start;
     -webkit-column-gap: 60px;
        -moz-column-gap: 60px;
