@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   padding-top: 118px;
-  padding-bottom: 118px;
+  // padding-bottom: 118px;
   background-color: $bg-darc-color;
 
   margin-left: auto;
   margin-right: auto;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('/images/phone/background/background.jpg');
+    url('../images/desktop/background/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px;
@@ -32,12 +32,12 @@
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('./images/phone/background/background2x.jpg');
+      url('../images/phone/background/background2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('./images/tablet/background/background.jpg');
+      url('../images/tablet/background/background.jpg');
     background-size: 768px;
   }
 
@@ -45,12 +45,12 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('/images/tablet/background/background2x.jpg');
+      url('../images/tablet/background/background2x.jpg');
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('./images/desktop/background/background.jpg');
+      url('../images/desktop/background/background.jpg');
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: 1600px;
@@ -69,7 +69,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('./images/desktop/background/background2x.jpg');
+      url('../images/desktop/background/background2x.jpg');
   }
   // .hero {
   //   background-color: $bg-darc-color;
